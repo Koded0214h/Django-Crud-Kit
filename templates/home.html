@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  | Dashboard
+{% endblock title %}
+
+{% block links %}
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock links %}
+
+{% block content %}
+
+  <nav>
+    <h3>Django-CRUD Kit</h3>
+    <ul>
+        <li><a href="{% url 'read_items' %}">Item</a></li>
+        <li><a href="{% url 'create_category' %}">Category</a></li>
+        <img class="image" src="{{ user.profile_image.url }}" alt="{{ user.username }}">
+    </ul>
+  </nav>
+
+  <section class="search">
+    <form action="">
+        <input type="text" name="search" id="search" placeholder="Search...">
+    </form>
+  </section>
+
+{% endblock content %}

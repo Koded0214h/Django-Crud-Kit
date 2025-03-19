@@ -1,0 +1,19 @@
+body{
+    background-image: url('../img/crud1.jpg');
+}
+nav{
+    background-color: white;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+input{
+    height: 50px;
+    width: 500px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding-left: 30px;
+    font-size: medium;
+}

@@ -1,0 +1,30 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{% block title %}
+  | Create Item
+{% endblock title %}
+
+{% block links %}
+  <link rel="stylesheet" href="{% static 'css/core/update_item.css' %}">
+{% endblock links %}
+
+{% block content %}
+
+  <div class="container">
+    <h1>Django CRUD Kit</h1>
+   
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="btn">
+          <button class="create">Update Item</button>
+          <a href="{% url 'read_items' %}"><button class="button">Cancel</button></a>
+        </div>
+                
+    </form>
+  </div>
+
+
+
+{% endblock content %}

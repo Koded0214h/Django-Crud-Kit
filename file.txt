@@ -1,0 +1,24 @@
+    {% block navbar %}
+
+    <nav>
+        <h3>Django-CRUD Kit</h3>
+        <ul>
+            <li><a href="">Item</a></li>
+            <li><a href="">Category</a></li>
+            <img class="image" src="crud1.jpg" alt="username">
+        </ul>
+    </nav>
+
+    {% endblock navbar %}
+
+        {% block footer %}
+      
+    <footer>
+        <h3>Django-CRUD Kit</h3>
+        <ul>
+            <li><a href="">Item</a></li>
+            <li><a href="">Category</a></li>
+        </ul>
+    </footer>
+
+    {% endblock footer %}

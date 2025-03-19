@@ -1,0 +1,44 @@
+{% extends "../base.html" %}
+{% load static %}
+
+
+{% block title %}
+  | Items
+{% endblock title %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/core/read_items.css' %}">
+{% endblock links %}
+
+{% block content %}
+
+    <nav>
+        <h3>Django-CRUD Kit</h3>
+        <ul>
+            <li><a href="{% url 'read_items' %}">Item</a></li>
+            <li><a href="{% url 'create_category' %}">Category</a></li>
+            <img class="image" src="{{ user.profile_image.url }}" alt="{{ user.username }}">
+        </ul>
+    </nav>
+
+
+    <section class="items">
+        <div class="boxes">
+            {% for item in items %}
+                <div class="box">
+                    <p><a href="{% url 'item' item.id %}">{{ item.name }}</a> - ${{ item.price }}</p>
+                    <div class="btn">
+                        <a href="{% url 'update_item' item.id %}"><button>U</button></a>
+                        <a href="{% url 'delete_item' item.id %}"><button>D</button></a>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="box  create">
+                <a href="{% url 'create_item' %}"><button>Create Item</button></a>
+            </div>
+        </div>
+    </section>
+    
+
+
+{% endblock content %}

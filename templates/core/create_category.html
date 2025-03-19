@@ -1,0 +1,20 @@
+{% extends "../base.html" %}
+
+
+{% block title %}
+  | Create Item
+{% endblock title %}
+
+{% block content %}
+
+    <h1>Django CRUD Kit</h1>
+   
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Create Category</button>
+        <a href="{% url 'read_items' %}"><button>Cancel</button></a>        
+    </form>
+
+
+{% endblock content %}

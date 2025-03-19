@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.container h1{
+    margin-bottom: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.form-control{
+    width: 90%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.form-contro{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.img{
+    padding: 5px;
+}
+.control{
+    margin-bottom: 10px;
+}
+.last{
+    margin-bottom: 10px;
+}
+.btn{
+    width: 90%;
+    display: flex;
+}
+.create{
+    margin-right: auto;
+    cursor: pointer;
+}
+.button{
+    margin-left: auto;
+    background-color: red;
+    cursor: pointer;
+}
+form button{
+    height: 35px;
+    width: 100px;
+    background-color: #663399;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+form p{
+    font-size: 14px;
+}
+form a{
+    text-decoration: none;
+    color: #663399;
+}
+form.error{
+    color: red;
+}

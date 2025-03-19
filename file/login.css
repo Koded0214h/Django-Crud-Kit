@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 10px 30px;
+    margin-bottom: 100px;
+}
+nav h3{
+    margin-right: auto;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li, nav ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: #663399;
+}
+.image{
+    background-color: grey;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.container, .item{
+    margin-inline: 40px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.text h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.text p{
+    line-height: 20px;
+    max-lines: 3;
+    width: 500px;
+    margin-bottom: 30px;
+}
+.text button{
+    background-color: #663399;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.text button:hover{
+    cursor: pointer;
+}
+.text .price span{
+    color: #663399;
+}
+.desc{
+    color: #663399;
+}
+
+.items{
+    display: flex;
+   justify-content: center;
+   margin-bottom: 100px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.b1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.b2{
+    grid-column: 2;
+    grid-row: 1;
+}
+.b3{
+    grid-column: 3;
+    grid-row: 1;
+}
+.b4{
+    grid-column: 1;
+    grid-row: 2;
+}
+.b5{
+    grid-column: 2;
+    grid-row: 2;
+}
+.b6{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+input{
+    height: 50px;
+    width: 500px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding-left: 30px;
+    font-size: medium;
+}
+footer{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    padding: 40px 300px;
+}
+footer h3{
+    margin-right: auto;
+}
+footer ul{
+    display: block;
+    gap: 30px;
+    align-items: center;
+}
+footer ul li, footer ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    color: #663399;
+}
+.image{
+    background-color: grey;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,24 @@
+# Virtual Environment
+venv/
+env/
+
+# Python Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+
+# Django Secrets & Settings
+*.sqlite3
+.env
+
+# Static & Media Files
+staticfiles/
+media/
+
+# VS Code & JetBrains IDEs
+.vscode/
+.idea/
+
+# Ignore migrations (optional)
+**/migrations/*.py
+!**/migrations/__init__.py
