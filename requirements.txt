@@ -11,3 +11,4 @@ stevedore==5.4.1
 virtualenv==20.29.3
 virtualenv-clone==0.5.7
 virtualenvwrapper==6.1.1
+gunicorn
