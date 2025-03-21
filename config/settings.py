@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'cloudinary',
+    'cloudinary_storage',
     
      # Your Apps
     'apps.core.apps.CoreConfig',   # Full path to Core app config
@@ -140,11 +145,11 @@ MIDDLEWARE = [
 
 # Media files (png, jpeg, jpg)
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if not DEBUG:
     import os
-    MEDIA_URL = "django-crud-kit.onrender.com/media/"
+    MEDIA_URL = "https://django-crud-kit.onrender.com/media/"
     MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
@@ -162,3 +167,12 @@ LOGIN_URL = 'login'
 MIGRATION_MODULES = {
     "users": "apps.users.migrations",
 }
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'doarhpvhv',
+    'API_KEY': '724139955514194',
+    'API_SECRET': 'rkDRTpHp-s-WaoR4qJLpY1qa6aI',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
