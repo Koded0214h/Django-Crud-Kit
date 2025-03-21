@@ -17,6 +17,8 @@ import cloudinary.uploader
 import cloudinary.api
 from cloudinary.storage import MediaCloudinaryStorage
 
+import dj_database_url
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -181,3 +183,11 @@ CLOUDINARY_STORAGE = {
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+DATABASES = {
+    "default": dj_database_url.config(
+        default="sqlite:///db.sqlite3",  # Use SQLite as fallback
+        conn_max_age=600,
+        ssl_require=True,
+    )
+}
