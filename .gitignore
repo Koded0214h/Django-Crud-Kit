@@ -14,6 +14,7 @@ __pycache__/
 # Static & Media Files
 staticfiles/
 media/
+!media/.keep
 
 # VS Code & JetBrains IDEs
 .vscode/
